@@ -35,6 +35,23 @@
     .back-link:hover {
       text-decoration: underline;
     }
+    .next-button {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  background-color: #185981;   /* 濃い青で分岐とはっきり差別化 */
+  color: #fff;                 /* 白文字 */
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.next-button:hover {
+  background-color: #0f3e5c;
+  transform: translateY(-2px); /* 浮くようなエフェクト */
+}
   </style>
 </head>
 <body>
@@ -70,5 +87,5 @@
     </p>
     <ul>
   <li>
-    <a href="2.html">A：「五年前、何があったんですか？」十二は虎兄貴に質問した。</a>
+    <a href="2.html" class="next-button">下一章</a>
   </li>
