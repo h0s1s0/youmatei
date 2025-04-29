@@ -36,8 +36,17 @@ a {
 a:hover {
   background-color: #ccc;
 }
-     </style>
-   <style>
+        .back-link {
+      margin-top: 2em;
+      display: block;
+      text-align: center;
+      color: #336699;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+
     body {
       background-color: #cccccc;
       color: #185981;
@@ -46,14 +55,32 @@ a:hover {
       margin: 0;
       padding: 2em;
     }
+      .next-button {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  background-color: #185981;   /* 濃い青で分岐とはっきり差別化 */
+  color: #fff;                 /* 白文字 */
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.next-button:hover {
+  background-color: #0f3e5c;
+  transform: translateY(-2px); /* 浮くようなエフェクト */
+}
   </style>
 </head>
 
 <body>
   <div class="content">
-
-B：「思い出した。あんた俺に喧嘩売ってきただろ」十二は王九に声をかけた。
-
+<h4>
+  B：「思い出した。あんた俺に喧嘩売ってきただろ」十二は王九に声をかけた。
+</h4>
+    <p>
 「思い出した。あんた、俺に喧嘩売ってきただろ」
 　十二は王九に向かって声を投げた。隣にいた虎兄貴が片眉をぐいと上げる。
 「喧嘩？」
@@ -75,7 +102,10 @@ B：「思い出した。あんた俺に喧嘩売ってきただろ」十二は�
 　あまりにあっさり告げられて、十二は言葉を失った。あの、五年前、路上で俺をぶっ飛ばして、何のためらいもなく怒鳴りつけてきた狂犬みたいな男。目の前のサングラス越しの視線に、あのときの怖さが蘇る。背中が薄ら寒くなった。
 （冗談じゃねえ）
 　喉まで出かかった叫びを、なんとか押し殺した。
+    </p>
 
+    <a href="next.html" class="next-button">下一章</a>
+    
     <a href="index.html" class="back-link">← トップページに戻る</a>
   </div>
 </body>
