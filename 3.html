@@ -52,6 +52,23 @@ next-button:hover {
   background-color: #0f3e5c;
   transform: translateY(-2px); /* 浮くようなエフェクト */
 }
+        .choice {
+      margin-top: 2em;
+    }
+    .choice a {
+      display: block;
+      margin-bottom: 1em;
+      padding: 1em;
+      background-color: #e0e0ff;
+      text-decoration: none;
+      color: #000;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: background-color 0.3s;
+    }
+    .choice a:hover {
+      background-color: #c0c0ff;
+    }
   </style>
 </head>
 <body>
@@ -148,9 +165,22 @@ next-button:hover {
 「兄貴たち、おかしくないか」
  </p>
 
-    <a href="3.html" class="next-button" title="次に進む">下一章</a>
+  <div class="choice">
+    <a href="a2.html"  onclick="addProgress('P')">A：王九がそう言った。</a>
+  </li>
+  <li>
+    <a href="b2.html" onclick="addProgress('S')">B：十二がそう言った。</a>
+  </li>
+</ul>
 
     <a href="start.html" class="back-link" title="トップページに戻る">返首頁</a>
   </div>
+      <script>
+    function addProgress(route) {
+      const key = 'progress_' + route;
+      let current = Number(localStorage.getItem(key)) || 0;
+      localStorage.setItem(key, current + 1);
+    }
+  </script>
 </body>
 </html>
